@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css" type="text/css"> -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body id="main-body">
+    <div class="main-container">
+        <!-- These cards will appear with text in turn -->
+        <div id="all-cards">
+            <h4 class="cards" id="cardOne"></h4>
+            <h4 class="cards" id="cardTwo"></h4>
+            <h4 class="cards" id="cardThree"></h4>
+            <h4 class="cards" id="cardFour"></h4>
+        </div>
+
+        <!-- Main image animation -->
+        <div class="main-image">
+            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_lvfwnh1b.json" background="transparent" speed="0.4" loop autoplay></lottie-player>
+        </div>
+
+        <!-- This appears later to stop the timer and all the flow -->
+        <div class="stopFlow flex" id="finisher">
+            <h3 id="finisherText">Tired already?</h3>
+            <button id="finish-btn">Press this.</button>
+        </div>
+
+        <!-- Main counter container -->
+        <div class="counterBox flex starterResize" id="startingBox">
+            <div class="counter-container flex">
+                <!-- This appears in the very beginning to start the counter -->
+                <div id="welcomeText">
+                    <h2>How much time can you spend on this page?</h2>
+                    <p>Click on this window to figure that one out.</p>
+                </div>
+
+                <!-- The counter itself -->
+                <div class="numbers flex remove">
+                    <h1 id="hours">00</h1>
+                </div>
+                <div class="numbers remove"><h2>:</h2></div>
+
+                <div class="numbers flex remove">
+                    <h1 id="minutes">00</h1>
+                </div>
+                <div class="numbers remove"><h2>:</h2></div>
+
+                <div class="numbers flex remove">
+                    <h1 id="seconds">00</h1>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
